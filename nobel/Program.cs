@@ -27,7 +27,7 @@ namespace nobel
 
             //5
             Console.WriteLine("\n5. feladat:");
-            nobelLista.Where(n => n.VezetekNev == "" && n.Ev >= 1990).ToList().ForEach(n => Console.WriteLine($"\t{n.Ev}: {n.KeresztNev}"));
+            nobelLista.Where(n => n.Tipus == "béke" && n.VezetekNev == "" && n.Ev >= 1990).ToList().ForEach(n => Console.WriteLine($"\t{n.Ev}: {n.KeresztNev}"));
 
             //6
             Console.WriteLine("\n6. feladat:");
